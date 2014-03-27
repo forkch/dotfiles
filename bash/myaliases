@@ -1,0 +1,19 @@
+alias pg='ps -ef | grep'
+alias hg='history -a; history -n; history | grep'
+
+alias d='cd ~/Downloads'
+alias bring='cd ~/Code/bring-android'
+alias adhoc='cd ~/Code/adhoc-railway'
+alias scenarioo='cd ~/Code/scenarioo'
+alias dotfiles='cd ~/Code/dotfiles'
+
+
+alias a=alias
+eval "`dircolors -b`"
+alias l='ls -l --color=auto'
+alias ls='ls --color=auto'
+alias ll='ls -plah --color=auto'
+alias ..='cd ..'
+alias rc='source ~/.bashrc'
+alias syslog='sudo tail -f /var/log/syslog'
+
