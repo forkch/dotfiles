@@ -120,6 +120,7 @@ PATH=${PATH}:/home/fork/Software/Logic
 PATH=${PATH}:/home/fork/Software/netbeans/bin/
 
 LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib
+export ANDROID_HOME=~/Software/android-sdk-linux
 
 export EDITOR=vim
 export LESS=-cersM
