@@ -9,7 +9,7 @@
 
 dir=~/Code/dotfiles                    # dotfiles directory
 olddir=~/Code/dotfiles_old             # old dotfiles backup directory
-files="bashrc bash-colors.sh bash git-completion.bash git-flow-completion.bash gitconfig git-settings.sh gitk git-prompt.sh vimrc vim IntelliJIdea13"    # list of files/folders to symlink in homedir
+files="zshrc bashrc bash-colors.sh bash git-completion.bash git-flow-completion.bash git-settings.sh gitk git-prompt.sh vimrc vim IntelliJIdea13"    # list of files/folders to symlink in homedir
 
 ##########
 
