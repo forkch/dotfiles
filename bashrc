@@ -118,8 +118,10 @@ PATH=${PATH}:/home/fork/Software/idea/bin
 PATH=${PATH}:/home/fork/Software/WebStorWebStorm/bin
 PATH=${PATH}:/home/fork/Software/Logic
 PATH=${PATH}:/home/fork/Software/netbeans/bin/
+PATH=${PATH}:/home/fork/Software/apache-jmeter/bin/
 
 LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib
+export ANDROID_HOME=~/Software/android-sdk-linux
 
 export EDITOR=vim
 export LESS=-cersM
@@ -142,3 +144,6 @@ case $TERM in
 esac
 
 export VISUAL=vim
+
+# added by travis gem
+[ -f /home/fork/.travis/travis.sh ] && source /home/fork/.travis/travis.sh
