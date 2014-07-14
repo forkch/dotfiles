@@ -51,7 +51,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/home/fork/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/fork/bin:/home/fork/Software/android-sdk-linux/tools:/home/fork/Software/arduino:/home/fork/Software/android-sdk-linux/platform-tools:/home/fork/Software/idea/bin:/home/fork/Software/WebStorWebStorm/bin:/home/fork/Software/Logic:/home/fork/Software/netbeans/bin/:/home/fork/Software/apache-jmeter/bin/"
+export PATH="/home/fork/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/fork/bin:/home/fork/Software/android-sdk-linux/tools:/home/fork/Software/arduino:/home/fork/Software/android-sdk-linux/platform-tools:/home/fork/Software/idea/bin:/home/fork/Software/WebStorWebStorm/bin:/home/fork/Software/Logic:/home/fork/Software/netbeans/bin/:/home/fork/Software/apache-jmeter/bin/:$PATH"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
