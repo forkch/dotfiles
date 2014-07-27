@@ -81,5 +81,5 @@ alias ohmyzsh="subl ~/.oh-my-zsh"
 alias rczsh="source ~/.zshrc"
 #
 for file in `ls ~/.bash`; do
-      . ~/.bash/$file
-    done
+  . ~/.bash/$file
+done
