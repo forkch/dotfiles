@@ -6,6 +6,7 @@ alias bring='cd ~/Code/bring-android'
 alias adhoc='cd ~/Code/adhoc-railway'
 alias scenarioo='cd ~/Code/scenarioo'
 alias dotfiles='cd ~/Code/dotfiles'
+alias mvnrepo='cd ~/Code/forkch-mvn-repo'
 
 
 alias a=alias
@@ -14,6 +15,6 @@ alias l='ls -l --color=auto'
 alias ls='ls --color=auto'
 alias ll='ls -plah --color=auto'
 alias ..='cd ..'
-alias rc='source ~/.bashrc'
+alias rc='source ~/.zshrc'
 alias syslog='sudo tail -f /var/log/syslog'
 
