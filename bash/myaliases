@@ -4,7 +4,6 @@ alias hg='history -a; history -n; history | grep'
 alias d='cd ~/Downloads'
 alias bring='cd ~/Code/bring-android'
 alias adhoc='cd ~/Code/adhoc-railway'
-alias scenarioo='cd ~/Code/scenarioo'
 alias dotfiles='cd ~/Code/dotfiles'
 alias mvnrepo='cd ~/Code/forkch-mvn-repo'
 
