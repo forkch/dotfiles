@@ -84,3 +84,5 @@ alias rczsh="source ~/.zshrc"
 for file in `ls ~/.bash`; do
   . ~/.bash/$file
 done
+
+zstyle ':completion:*' special-dirs true
