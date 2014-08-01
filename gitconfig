@@ -1,4 +1,13 @@
 [user]
+<<<<<<< HEAD
+	email = news@fork.ch
+	name = Benjamin Müller
+[push]
+	default = simple
+[github]
+	user = forkch
+	toker = Ohthei5j
+=======
 	name = Benjamin Müller
 	email = bm@fork.ch
 [giggle]
@@ -23,3 +32,4 @@
   lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' %--all
   lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n'' %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
   lg = !"git lg1"
+>>>>>>> 38c82c09ee4a52ceddb3ef857b26c85e1906ab07

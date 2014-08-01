@@ -13,7 +13,6 @@ eval "`dircolors -b`"
 alias l='ls -l --color=auto'
 alias ls='ls --color=auto'
 alias ll='ls -plah --color=auto'
-alias ..='cd ..'
 alias rc='source ~/.zshrc'
 alias syslog='sudo tail -f /var/log/syslog'
 
