@@ -97,3 +97,5 @@ done
 zstyle ':completion:*' special-dirs true
 
 . ~/Code/dotfiles/resty
+
+setopt no_share_history
