@@ -50,17 +50,19 @@ plugins=(bower node npm sudo git web-search git-flow)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-PATH=${PATH}:~/bin
-PATH=${PATH}:/home/fork/Software/android-sdk-linux/tools
-PATH=${PATH}:/home/fork/Software/arduino
-PATH=${PATH}:/home/fork/Software/android-sdk-linux/platform-tools
-PATH=${PATH}:/home/fork/Software/idea/bin
-PATH=${PATH}:/home/fork/Software/WebStorWebStorm/bin
-PATH=${PATH}:/home/fork/Software/Logic
-PATH=${PATH}:/home/fork/Software/netbeans/bin/
-PATH=${PATH}:/home/fork/Software/apache-jmeter/bin/
-PATH=${PATH}:/home/fork/Software/p4v/bin/
+echo $PATH
+path=('home/fork/bin',$path)
+path=('home/fork/Software/android-sdk-linux/tools',$path)
+path=('/home/fork/Software/arduino',$path)
+path=('/home/fork/Software/android-sdk-linux/platform-tools',$path)
+path=('/home/fork/Software/idea/bin',$path)
+path=('/home/fork/Software/WebStorWebStorm/bin',$path)
+path=('/home/fork/Software/Logic',$path)
+path=('/home/fork/Software/netbeans/bin/',$path)
+path=('/home/fork/Software/apache-jmeter/bin/',$path)
+path=('/home/fork/Software/p4v/bin/',$path)
+export PATH
+echo $PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
