@@ -147,3 +147,6 @@ export VISUAL=vim
 
 # added by travis gem
 [ -f /home/fork/.travis/travis.sh ] && source /home/fork/.travis/travis.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
