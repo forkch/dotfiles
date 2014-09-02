@@ -62,7 +62,6 @@ path=('/home/fork/Software/netbeans/bin/',$path)
 path=('/home/fork/Software/apache-jmeter/bin/',$path)
 path=('/home/fork/Software/p4v/bin/',$path)
 export PATH
-s
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
