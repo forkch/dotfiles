@@ -50,17 +50,16 @@ plugins=(bower node npm sudo git web-search git-flow)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-echo $PATH
-path=('home/fork/bin',$path)
-path=('home/fork/Software/android-sdk-linux/tools',$path)
-path=('/home/fork/Software/arduino',$path)
-path=('/home/fork/Software/android-sdk-linux/platform-tools',$path)
-path=('/home/fork/Software/idea/bin',$path)
-path=('/home/fork/Software/WebStorWebStorm/bin',$path)
-path=('/home/fork/Software/Logic',$path)
-path=('/home/fork/Software/netbeans/bin/',$path)
-path=('/home/fork/Software/apache-jmeter/bin/',$path)
-path=('/home/fork/Software/p4v/bin/',$path)
+path=('/home/fork/bin':$path)
+path=('/home/fork/Software/android-sdk-linux/tools':$path)
+path=('/home/fork/Software/arduino':$path)
+path=('/home/fork/Software/android-sdk-linux/platform-tools':$path)
+path=('/home/fork/Software/idea/bin':$path)
+path=('/home/fork/Software/WebStorm/bin':$path)
+path=('/home/fork/Software/Logic':$path)
+path=('/home/fork/Software/netbeans/bin/':$path)
+path=('/home/fork/Software/apache-jmeter/bin/':$path)
+path=('/home/fork/Software/p4v/bin/':$path)
 export PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -99,3 +98,6 @@ zstyle ':completion:*' special-dirs true
 . ~/Code/dotfiles/resty
 
 setopt no_share_history
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
