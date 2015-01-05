@@ -99,3 +99,6 @@ zstyle ':completion:*' special-dirs true
 . ~/Code/dotfiles/resty
 
 setopt no_share_history
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
