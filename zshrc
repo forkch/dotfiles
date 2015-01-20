@@ -50,7 +50,6 @@ plugins=(bower node npm sudo git web-search git-flow)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-echo $PATH
 path=('/home/fork/bin' $path)
 path=('/home/fork/Software/android-sdk-linux/tools' $path)
 path=('/home/fork/Software/arduino' $path)
