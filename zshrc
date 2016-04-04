@@ -107,3 +107,12 @@ setopt no_share_history
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/home/fork/.gvm/bin/gvm-init.sh" ]] && source "/home/fork/.gvm/bin/gvm-init.sh"
+
+export NVM_DIR="/home/fork/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+NODE_PATH=$NODE_PATH:/home/fork/.nvm/versions/node/v0.12.6/lib/node_modules
+
