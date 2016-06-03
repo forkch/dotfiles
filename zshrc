@@ -66,7 +66,13 @@ path=("$HOME/Software/Logic" $path)
 path=("$HOME/Software/netbeans/bin/" $path)
 path=("$HOME/Software/apache-jmeter/bin/" $path)
 path=("$HOME/Software/p4v/bin/" $path)
+path=("/usr/local/go/bin" $path)
 export PATH
+
+export GOPATH=$HOME/work
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
