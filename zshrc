@@ -56,6 +56,8 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 path=("$HOME/bin" $path)
 path=("$HOME/Android/Sdk/tools" $path)
+path=("$HOME/Software/Android/sdk/tools" $path)
+path=("$HOME/Software/Android/sdk/platform-tools" $path)
 path=("$HOME/Android/ndk/" $path)
 path=("$HOME/Software/android-sdk-linux/tools" $path)
 path=("$HOME/Software/arduino" $path)
