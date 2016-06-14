@@ -74,6 +74,7 @@ export PATH
 export GOPATH=$HOME/work
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
+export ANDROID_HOME=$HOME/Software/Android/sdk
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
