@@ -18,7 +18,15 @@
 	interval = 30
 	icon = /home/fork/.git-dude/Octocat/Octocat.png
 [merge]
-	tool = meld
+   tool = androidstudio
+[mergetool "androidstudio"]
+   cmd = $HOME/Software/android-studio/bin/studio.sh merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
+   trustExitCode = true
+[diff]
+   tool = androidstudio
+[difftool "androidstudio"]
+   cmd = $HOME/Software/android-studio/bin/studio.sh diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
+
 [core]
 	autocrlf = input
 [push]
