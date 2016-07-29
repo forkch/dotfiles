@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-cd $HOME/Code/dotfiles/ && git pull
+#cd $HOME/Code/dotfiles/ && git pull
 
 cd $HOME
 
@@ -50,6 +50,8 @@ ZSH_THEME="bira"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(bower node npm sudo git web-search git-flow)
+plugins+=(zsh-completions)
+autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 
@@ -128,3 +130,4 @@ export NVM_DIR="$HOME/.nvm"
 
 NODE_PATH=$NODE_PATH:/home/fork/.nvm/versions/node/v0.12.6/lib/node_modules
 
+fpath=($HOME/.zsh-completions/ $fpath)

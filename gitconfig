@@ -18,14 +18,14 @@
 	interval = 30
 	icon = /home/fork/.git-dude/Octocat/Octocat.png
 [merge]
-   tool = androidstudio
-[mergetool "androidstudio"]
-   cmd = $HOME/Software/android-studio/bin/studio.sh merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
+   tool = intellij
+[mergetool "intellij"]
+   cmd = $HOME/Software/idea/bin/idea.sh merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
    trustExitCode = true
 [diff]
-   tool = androidstudio
-[difftool "androidstudio"]
-   cmd = $HOME/Software/android-studio/bin/studio.sh diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
+   tool = intellij
+[difftool "intellij"]
+   cmd = $HOME/Software/idea/bin/idea.sh diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
 
 [core]
 	autocrlf = input
@@ -35,8 +35,68 @@
 	helper = cache --timeout=3600
 
 [alias]
-  lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' %--all
-  lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n'' %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
-  lg = !"git lg1"
+	lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' %--all
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n'' %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+	lg = !"git lg1"
+	A = add -A
+	a  = add
+	aa = add --all
+	ae = add --edit
+	ai = add --interactive
+	amend = commit --amend -C HEAD
+	ap = add --patch
+	au = add --update
+	authors = "!git log --pretty=format:%aN | sort | uniq -c | sort -rn"
+	b = branch
+	c = commit
+	ca = commit --amend
+	cam = commit -am 
+	changes = diff --name-status -r
+	cm = commit --message
+	co = checkout
+	cpc = cherry-pick
+	d = diff
+	dc = diff --cached
+	div = divergence
+	ds = diff --staged
+	fu = fetch upstream
+	mud = merge upstream/develop
+	h = help
+	irb = rebase --interactive
+	l = log --oneline --decorate
+	lg = log --graph --pretty=format:'%Cred%h%Creset %an -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	ls-ignored = ls-files --exclude-standard --ignored --others
+	m = merge
+	mm = merge --no-ff
+	msg = commit --allow-empty -m
+	p = cherry-pick -s
+	pick = cherry-pick
+	pom = push origin master
+	pofm = push origin HEAD:refs/for/master
+	pofd = push origin HEAD:refs/for/develop
+	pod = push origin develop
+	prune-remotes = "!for remote in `git remote`; do git remote prune $remote; done"
+	push = push --tags
+	r = remote
+	ra = !git log --graph --abbrev-commit --date=relative -20 --all --pretty='format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'
+	rb = rebase
+	rba = rebase --abort
+	rbc = rebase --continue
+	rbs = rebase --skip
+	rh = reset --hard
+	ru = remote update --prune
+	s = status --short --branch
+	sl = shortlog
+	sm = submodule
+	sma = submodule add
+	smu = submodule update --init
+	#st = stash
+	stl = stash list
+	stp = stash pop
+	tagcommit = !sh -c 'git rev-list $0 | head -n 1'
+	tree = log --graph --pretty=oneline --decorate
+	undo = reset --soft HEAD^
+	wd = diff --color-words
+	wds = diff --color-words --staged
 [pull]
 	rebase = true
