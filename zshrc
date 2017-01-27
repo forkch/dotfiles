@@ -71,7 +71,7 @@ path=("$HOME/Software/idea/bin" $path)
 path=("$HOME/Software/WebStorWebStorm/bin" $path)
 path=("$HOME/Software/Logic" $path)
 path=("$HOME/Software/netbeans/bin/" $path)
-path=("$HOME/Software/apache-jmeter/bin/" $path)
+path=("$HOME/Software/apache-jmeter-3.0/bin/" $path)
 path=("$HOME/Software/p4v/bin/" $path)
 path=("/usr/local/go/bin" $path)
 export PATH

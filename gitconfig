@@ -18,14 +18,18 @@
 	interval = 30
 	icon = /home/fork/.git-dude/Octocat/Octocat.png
 [merge]
-   tool = intellij
+   tool = meld
 [mergetool "intellij"]
    cmd = $HOME/Software/idea/bin/idea.sh merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
    trustExitCode = true
+[mergetool "meld"]
+   cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $MERGED $REMOTE
 [diff]
    tool = intellij
 [difftool "intellij"]
    cmd = $HOME/Software/idea/bin/idea.sh diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
+[difftool "meld"]
+    path = meld
 
 [core]
 	autocrlf = input
@@ -58,7 +62,7 @@
 	d = diff
 	dc = diff --cached
 	div = divergence
-	ds = diff --staged
+	ds = diff --stagedgit
 	fu = fetch upstream
 	mud = merge upstream/develop
 	h = help
@@ -99,4 +103,4 @@
 	wd = diff --color-words
 	wds = diff --color-words --staged
 [pull]
-	rebase = true
+	rebase = false

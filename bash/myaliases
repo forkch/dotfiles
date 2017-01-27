@@ -19,3 +19,5 @@ alias syslog='sudo tail -f /var/log/syslog'
 alias resthhprod='resty hamsterhelper.herokuapp.com'
 alias resthhdev='resty hamsterhelper-dev.herokuapp.com'
 alias resthhlocaldev='resty localhost:9000'
+
+alias o='xdg-open'
