@@ -1,3 +1,3 @@
-alias ba='cd ~/Code//bring-android/bring'
-alias bas='cd ~/Code//bring-android-second/bring'
-alias bs='cd ~/Code//bring-server/bring'
+alias ba='cd ~/Code/bring/bring-android/bring'
+alias bas='cd ~/Code/bring/bring-android-second/bring'
+alias bs='cd ~/Code/bring/bring-server/bring'
