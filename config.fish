@@ -19,3 +19,7 @@ abbr -a gp="git push"
 abbr -a gu="git up"
 abbr -a s="git status -sb"
 abbr -a l="git log"
+
+
+source ~/.config/fish/nvm-wrapper/nvm.fish
+
