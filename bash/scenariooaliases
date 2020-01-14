@@ -1,2 +1,0 @@
-alias scenarioo='cd ~/Code/scenarioo/scenarioo'
-alias connecttoci='ssh -i ~/.ssh/Scenarioo-Keypair.pem ubuntu@54.88.202.24'

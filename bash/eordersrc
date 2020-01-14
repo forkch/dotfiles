@@ -1,8 +1,0 @@
-alias mailjb="cd ~/workspace-mai/eorders/log/jboss-as"
-alias maisr="cd ~/workspace-mai/eorders/log/jboss-as/serviceRequests"
-alias mailtc="cd ~/workspace-mai/eorders/log/tomcat"
-
-alias febljb="cd ~/workspace-februar/eorders/log/jboss-as"
-alias febsr="cd ~/workspace-februar/eorders/log/jboss-as/serviceRequests"
-alias febltc="cd ~/workspace-februar/eorders/log/tomcat"
-

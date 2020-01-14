@@ -1,6 +1,6 @@
 [user]
 	email = ben@getbring.com
-	name = ben
+	name = Ben
 [push]
 	default = simple
 [github]
@@ -32,6 +32,8 @@
 
 [core]
 	autocrlf = input
+	ignorecase = false
+	precomposeunicode = false
 [push]
 	default = simple
 [credential]
@@ -102,4 +104,4 @@
 	wd = diff --color-words
 	wds = diff --color-words --staged
 [pull]
-	rebase = false
+	rebase = true

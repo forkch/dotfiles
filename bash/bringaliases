@@ -1,3 +1,11 @@
 alias ba='cd ~/Code/bring/bring-android/bring'
 alias bas='cd ~/Code/bring/bring-android-second/bring'
 alias bs='cd ~/Code/bring/bring-server/bring'
+
+alias activitystack='adb+ shell dumpsys activity activities'
+
+alias bastion-testing='ssh-add -k /home/ben/.ssh/bring-testing.pem ; ssh -A -i "/home/ben/.ssh/bring-testing.pem" ec2-user@ec2-35-153-209-134.compute-1.amazonaws.com'
+alias bastion-production='ssh-add -k /home/ben/.ssh/bring-production.pem ; ssh -A -i "/home/ben/.ssh/bring-production.pem" ec2-user@ec2-34-199-50-85.compute-1.amazonaws.com'
+
+alias playstore='cd ~/Google\ Drive/ben@getbring.com/Bring/7\ Distribution/PlayStore/'
+alias deeplink='adb+ shell am start -W -a android.intent.action.VIEW -d '
